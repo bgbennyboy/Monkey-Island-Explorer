@@ -80,7 +80,7 @@ begin
   begin
     // These chars are invalid in file names.
     case ResultWithSpaces[i] of
-      '/', '\', ':', '*', '?', '"', '|', ' ', #$D, #$A, #9:
+      '/', '\', '<', '>', ':', '*', '?', '"', '|', ' ', #$D, #$A, #9:
         // Use chr(161) to indicate a duplicate space so we can remove
         // them at the end.
         {$WARNINGS OFF} // W1047 Unsafe code 'String index to var param'
