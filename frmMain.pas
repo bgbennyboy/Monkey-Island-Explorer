@@ -1,8 +1,8 @@
 {
 ******************************************************
   Monkey Island Explorer
-  Copyright (c) 2010 - 2011 Bgbennyboy
-  Http://quick.mixnmojo.com
+  Copyright (c) 2010 - 2018 Bennyboy
+  Http://quickandeasysoftware.net
 ******************************************************
 }
 
@@ -22,7 +22,8 @@ uses
 
   JCLSysInfo, JCLStrings, JCLShell, bass,
 
-  uMIExplorer_Const, uMIExplorer_Base, uMIExplorer_Types, uMIExplorer_Funcs;
+  uMIExplorer_Const, uMIExplorer_Base, uMIExplorer_Types, uMIExplorer_Funcs,
+  System.ImageList;
 
 type
   TformMain = class(TForm)
@@ -85,9 +86,6 @@ type
     procedure OpenPopupMenuHandler(Sender: TObject);
     procedure TreeGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;
       Column: TColumnIndex; TextType: TVSTTextType; var CellText: string);
-    procedure TreeGetImageIndex(Sender: TBaseVirtualTree; Node: PVirtualNode;
-      Kind: TVTImageKind; Column: TColumnIndex; var Ghosted: Boolean;
-      var ImageIndex: Integer);
     procedure TreeChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure menuItemDumpFileClick(Sender: TObject);
     procedure btnSaveFileClick(Sender: TObject);
@@ -108,6 +106,9 @@ type
     procedure TreeDblClick(Sender: TObject);
     procedure menuItemDumpWavClick(Sender: TObject);
     procedure menuItemSaveAllAudioClick(Sender: TObject);
+    procedure TreeGetImageIndex(Sender: TBaseVirtualTree; Node: PVirtualNode;
+      Kind: TVTImageKind; Column: TColumnIndex; var Ghosted: Boolean;
+      var ImageIndex: TImageIndex);
   private
     fExplorer: TMIExplorerBase;
     fAudioStream: TMemoryStream;
@@ -543,7 +544,7 @@ end;
 
 procedure TformMain.TreeGetImageIndex(Sender: TBaseVirtualTree;
   Node: PVirtualNode; Kind: TVTImageKind; Column: TColumnIndex;
-  var Ghosted: Boolean; var ImageIndex: Integer);
+  var Ghosted: Boolean; var ImageIndex: TImageIndex);
 var
   Ext: string;
 begin
@@ -567,6 +568,7 @@ begin
     ImageIndex:=13
   else
     ImageIndex:=5;
+
 end;
 
 procedure TformMain.TreeGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;

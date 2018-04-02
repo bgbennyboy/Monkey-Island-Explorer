@@ -1,8 +1,8 @@
 {
 ******************************************************
   Monkey Island Explorer
-  Copyright (c) 2010 - 2011 Bgbennyboy
-  Http://quick.mixnmojo.com
+  Copyright (c) 2010 - 2018 Bennyboy
+  Http://quickandeasysoftware.net
 ******************************************************
 }
 

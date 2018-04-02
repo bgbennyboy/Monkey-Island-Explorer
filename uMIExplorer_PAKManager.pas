@@ -1,3 +1,11 @@
+{
+******************************************************
+  Monkey Island Explorer
+  Copyright (c) 2010 - 2018 Bennyboy
+  Http://quickandeasysoftware.net
+******************************************************
+}
+
 unit uMIExplorer_PAKManager;
 
 interface

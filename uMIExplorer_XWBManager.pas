@@ -1,3 +1,11 @@
+{
+******************************************************
+  Monkey Island Explorer
+  Copyright (c) 2010 - 2018 Bennyboy
+  Http://quickandeasysoftware.net
+******************************************************
+}
+
 unit uMIExplorer_XWBManager;
 
 interface
@@ -46,6 +54,14 @@ const
     WAVEBANK_HEADER_SIGNATURE_LE: Cardinal  = 1145979479; //'WBND'
     WAVEBANK_HEADER_SIGNATURE_BE: Cardinal  = 1463963204; //'DNBW'
     ADPCM_MINIWAVEFORMAT_BLOCKALIGN_CONVERSION_OFFSET = 22;
+    MAX_WMA_AVG_BYTES_PER_SEC_ENTRIES = 7;
+    MAX_WMA_BLOCK_ALIGN_ENTRIES = 17;
+    aWMAAvgBytesPerSec: array [0..MAX_WMA_AVG_BYTES_PER_SEC_ENTRIES -1] of integer =
+      (12000, 24000, 4000, 6000, 8000, 20000, 2500);
+    aWMABlockAlign: array [0..MAX_WMA_BLOCK_ALIGN_ENTRIES -1] of integer =
+      ( 929, 1487, 1280, 2230, 8917, 8192, 4459, 5945, 2304, 1536, 1485, 1008,
+        2731, 4096, 6827, 5462, 1280);
+
 var
     WaveBankVersion: integer;
 
@@ -413,7 +429,7 @@ type
     wBlockAlign,
     wBitsPerSample: word;
 
-    wSize: Word;
+    //wSize: Word;
     wExtra: Word;
 
     dpds: cardinal;
@@ -425,6 +441,7 @@ var
   FWaveHeader: TWaveHeader;
   FADPCMHeader: TADPCMHeader;
   fXWMAHeader: TXWMAHeader;
+  dwBlockAlignIndex, dwBytesPerSecIndex: cardinal;
 begin
   case Codec of
     WAVEBANKMINIFORMAT_TAG_PCM:
@@ -494,23 +511,33 @@ begin
       with fXWMAHeader do
       begin
         riff:= 1179011410; //RIFF
-        totallen:= (SizeOf(TXWMAHeader) - 8) + DataSize;
+        totallen:= (SizeOf(TXWMAHeader) - 4) + DataSize;
         xwma:= 1095587672; //XWMA
         fmt:= 544501094; //'fmt '
-        wavelen:= 20;
+        wavelen:= 18;
         wFormatTag:= $0161;
         wChannels:= Channels;
         dwSamplesPerSec:= Bitrate;
-        wBitsPerSample := 16;
-        wBlockAlign:= 1;
-        dwAvgBytesPerSec:= 12000;
 
-        wSize := 2;
+        dwBytesPerSecIndex := Align shr 5;
+        if (dwBytesPerSecIndex < MAX_WMA_AVG_BYTES_PER_SEC_ENTRIES) then
+            dwAvgBytesPerSec := aWMAAvgBytesPerSec[dwBytesPerSecIndex]
+        else
+           Log('WMA bytes per sec value not found in array!');
+
+        dwBlockAlignIndex := Align and 31;
+        if dwBlockAlignIndex < MAX_WMA_BLOCK_ALIGN_ENTRIES then
+          wBlockAlign := aWMABlockAlign[dwBlockAlignIndex]
+        else
+          Log('WMA block align value not found in array!');
+
+        wBitsPerSample := 16;
+
         wExtra := 0;
 
         dpds := 1935962212; //dpds
         dpdschunksize := 4;
-        dpdsExtra := -1;
+        dpdsExtra := 2230;//always 2230 allegedly
 
         data:= 1635017060; //data
       end;

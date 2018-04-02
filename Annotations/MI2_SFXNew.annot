@@ -1,0 +1,1532 @@
+;For Monkey Island Explorer
+;http://quick.mixnmojo.com
+;Monkey Island 2: Special Edition - SFXNew
+;Based on the speech mappings made by Scott Talley
+
+[Info Header]
+Title=Monkey Island 2 - Special Edition - SFXNew
+UniqueFile1=510
+UniqueFile2=511
+NoFiles=512
+
+[0]
+Annotation=UI_Panel_Move (Wave Variation 4)
+
+[1]
+Annotation=UI_Panel_Move (Wave Variation 1)
+
+[2]
+Annotation=UI_Panel_Open
+
+[3]
+Annotation=UI_Panel_Select
+
+[4]
+Annotation=UIVolumeSFX UIVolumeMusic UIVolumeSpeech
+
+[5]
+Annotation=SFXsilence
+
+[6]
+Annotation=UI_Panel_Close
+
+[7]
+Annotation=UI_Panel_Move (Wave Variation 0)
+
+[8]
+Annotation=UI_Panel_Move (Wave Variation 2)
+
+[9]
+Annotation=UI_Panel_Move (Wave Variation 3)
+
+[10]
+Annotation=1S_005_CampfirePirate_Snort_01 (Wave Variation 0)
+
+[11]
+Annotation=1S_005_CampfirePirate_Snort_01 (Wave Variation 1)
+
+[12]
+Annotation=1S_005_CampfirePirate_Snort_01 (Wave Variation 2)
+
+[13]
+Annotation=1S_005_CampfirePirate_Snort_01 (Wave Variation 3)
+
+[14]
+Annotation=1S_005_CampfirePirate_Snort_01 (Wave Variation 4)
+
+[15]
+Annotation=1S_005_CampfirePirate_Snort_01 (Wave Variation 5)
+
+[16]
+Annotation=1S_005_CampfirePirate_Spit_01 (Wave Variation 0)
+
+[17]
+Annotation=1S_005_CampfirePirate_Spit_01 (Wave Variation 1)
+
+[18]
+Annotation=1S_005_CampfirePirate_Spit_01 (Wave Variation 2)
+
+[19]
+Annotation=1S_005_CampfirePirate_Spit_01 (Wave Variation 3)
+
+[20]
+Annotation=1S_005_CampfirePirate_Spit_01 (Wave Variation 4)
+
+[21]
+Annotation=1S_005_CampfirePirate_SpitHitFire_01 (Wave Variation 0)
+
+[22]
+Annotation=1S_005_CampfirePirate_SpitHitFire_01 (Wave Variation 1)
+
+[23]
+Annotation=1S_007_Guybrush_PickUpShovel_01
+
+[24]
+Annotation=1S_009_Largo_Spit_01
+
+[25]
+Annotation=1S_009_Largo_SpitHitWall_01 (Wave Variation 0)
+
+[26]
+Annotation=1S_009_Largo_SpitHitWall_01 (Wave Variation 1)
+
+[27]
+Annotation=1S_011_Rat_Soup_01
+
+[28]
+Annotation=1S_013_Door_CreakOpen_01
+
+[29]
+Annotation=1S_014_Guybrush_CloseRatTrap_01
+
+[30]
+Annotation=1S_014_PegLeg_Bounce_01
+
+[31]
+Annotation=1S_014_PegLeg_FallInWater_01
+
+[32]
+Annotation=1S_017_Lightning_Strike_01(02) (Wave Variation 0)
+
+[33]
+Annotation=1S_017_Lightning_Strike_01(02) (Wave Variation 1)
+
+[34]
+Annotation=1S_017_Lightning_Strike_01(02) (Wave Variation 2)
+
+[35]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 0)
+
+[36]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 1)
+
+[37]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 2)
+
+[38]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 3)
+
+[39]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 4)
+
+[40]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 5)
+
+[41]
+Annotation=2B_047_Guybrush_ShipHornBlow_01
+
+[42]
+Annotation=2B_047_Guybrush_Spit_01 (Wave Variation 0)
+
+[43]
+Annotation=2B_047_Guybrush_Spit_01 (Wave Variation 1)
+
+[44]
+Annotation=2B_047_Guybrush_Spit_01 (Wave Variation 2)
+
+[45]
+Annotation=2B_047_Guybrush_Spit_01 (Wave Variation 3)
+
+[46]
+Annotation=2B_047_Guybrush_Spit_01 (Wave Variation 4)
+
+[47]
+Annotation=2B_047_Guybrush_SpitHitGround_01
+
+[48]
+Annotation=2B_047_Guybrush_SpitMisfire_01
+
+[49]
+Annotation=2B_048_Parrot_Squalk_01
+
+[50]
+Annotation=2B_048_Parrot_Whistle_01 (Wave Variation 0)
+
+[51]
+Annotation=2B_048_Parrot_Whistle_01 (Wave Variation 1)
+
+[52]
+Annotation=2B_048_Parrot_Whistle_01 (Wave Variation 2)
+
+[53]
+Annotation=2B_048_Parrot_Whistle_02 (Wave Variation 0)
+
+[54]
+Annotation=2B_048_Parrot_Whistle_02 (Wave Variation 1)
+
+[55]
+Annotation=2B_050_Guybrush_BellDing_01
+
+[56]
+Annotation=2B_050_Guybrush_BreakCashRegister_01
+
+[57]
+Annotation=2B_050_StansCoffin_Close_01
+
+[58]
+Annotation=2B_050_StansCoffin_HingeSqueak_01
+
+[59]
+Annotation=2B_050_StansCoffin_Open_01
+
+[60]
+Annotation=2B_053_Dog_Bark_01 (Wave Variation 0)
+
+[61]
+Annotation=2B_053_Dog_Bark_01 (Wave Variation 1)
+
+[62]
+Annotation=2B_053_Dog_Bark_01 (Wave Variation 2)
+
+[63]
+Annotation=2B_053_Dog_Bark_01 (Wave Variation 3)
+
+[64]
+Annotation=2B_053_Dog_Bark_01 (Wave Variation 4)
+
+[65]
+Annotation=2B_053_Dog_Bark_01 (Wave Variation 5)
+
+[66]
+Annotation=2B_053_Dog_Bark_01 (Wave Variation 6)
+
+[67]
+Annotation=2B_053_Dog_Sniff_01 (Wave Variation 0)
+
+[68]
+Annotation=2B_053_Dog_Sniff_01 (Wave Variation 1)
+
+[69]
+Annotation=2O_065_Guybrush_MonkeyHeadPickup_01
+
+[70]
+Annotation=2P_027_Guard_GunFire_01
+
+[71]
+Annotation=2P_029_Dog_DropKeys_01
+
+[72]
+Annotation=2P_029_Dog_DropStick_01
+
+[73]
+Annotation=2P_029_Dog_PickUpKeys_01
+
+[74]
+Annotation=2P_029_Guybrush_MattressMove_01
+
+[75]
+Annotation=2P_029_Guybrush_UnlockJailCell_01
+
+[76]
+Annotation=2P_030_Guybrush_LighthouseOpen_01
+
+[77]
+Annotation=2P_031_Guybrush_DrawerClose_01 (Wave Variation 0)
+
+[78]
+Annotation=2P_031_Guybrush_DrawerClose_01 (Wave Variation 1)
+
+[79]
+Annotation=2P_031_Guybrush_DrawerOpen_01 (Wave Variation 0)
+
+[80]
+Annotation=2P_031_Guybrush_DrawerOpen_01 (Wave Variation 1)
+
+[81]
+Annotation=2P_032_Guybrush_CardDown_01 (Wave Variation 0)
+
+[82]
+Annotation=2P_032_Guybrush_CardDown_01 (Wave Variation 1)
+
+[83]
+Annotation=2P_032_Guybrush_CardDown_01 (Wave Variation 2)
+
+[84]
+Annotation=2P_032_Guybrush_CardUp_01 (Wave Variation 0)
+
+[85]
+Annotation=2P_032_Guybrush_CardUp_01 (Wave Variation 1)
+
+[86]
+Annotation=2P_032_Guybrush_CardUp_01 (Wave Variation 2)
+
+[87]
+Annotation=2P_032_Guybrush_CardUp_01 (Wave Variation 3)
+
+[88]
+Annotation=2P_032_Guybrush_CardUp_01 (Wave Variation 4)
+
+[89]
+Annotation=2P_034_Doorman_HatchClose_01
+
+[90]
+Annotation=2P_034_Doorman_HatchOpen_01
+
+[91]
+Annotation=2P_035_Waterfall_Loop_01
+
+[92]
+Annotation=2P_036_Waterfall_Bubble_01
+
+[93]
+Annotation=2P_038_CottageWindow_Close_01
+
+[94]
+Annotation=2P_038_CottageWindow_Open_01
+
+[95]
+Annotation=2P_038_Telescope_StatueDown_01
+
+[96]
+Annotation=2S_006_Cooker_FlameLoop_01
+
+[97]
+Annotation=2S_006_Cooker_TurnOff_01
+
+[98]
+Annotation=2S_016_Coffin_Close_01
+
+[99]
+Annotation=2S_016_Guybrush_UnlockCrypt_01
+
+[100]
+Annotation=2S_018_Coffin_Open_01
+
+[101]
+Annotation=2S_019_Guybrush_UnlockWeenieHut_01
+
+[102]
+Annotation=3F_072_SkeletonDoor_Close_01
+
+[103]
+Annotation=3F_072_SkeletonDoor_Open_01
+
+[104]
+Annotation=3F_079_Candle_Extinguish_01
+
+[105]
+Annotation=3F_079_Guybrush_Spit_01 (Wave Variation 0)
+
+[106]
+Annotation=3F_079_Guybrush_Spit_01 (Wave Variation 1)
+
+[107]
+Annotation=3F_079_Guybrush_Spit_01 (Wave Variation 2)
+
+[108]
+Annotation=3F_079_Guybrush_Spit_01 (Wave Variation 3)
+
+[109]
+Annotation=3F_079_Guybrush_Spit_01 (Wave Variation 4)
+
+[110]
+Annotation=3F_079_Guybrush_SpitBounce_01 (Wave Variation 0)
+
+[111]
+Annotation=3F_079_Guybrush_SpitBounce_01 (Wave Variation 2)
+
+[112]
+Annotation=3F_079_Guybrush_SpitBounce_01 (Wave Variation 1)
+
+[113]
+Annotation=3F_079_Guybrush_SpitHitWall_01 (Wave Variation 0)
+
+[114]
+Annotation=3F_079_Guybrush_SpitHitWall_01 (Wave Variation 1)
+
+[115]
+Annotation=4D_085_Guybrush_GlassOcean_01
+
+[122]
+Annotation=4D_086_Explosion_X_01
+
+[123]
+Annotation=4D_097_Crate_Open_01
+
+[124]
+Annotation=4D_097_Guybrush_WaterCrackerMix_01
+
+[125]
+Annotation=4E_092_Guybrush_CloseDrawer_01
+
+[126]
+Annotation=4E_092_Guybrush_OpenDrawer_01
+
+[127]
+Annotation=4E_092_Guybrush_PickUpSkull_01
+
+[128]
+Annotation=4E_092_Guybrush_PullTile_01
+
+[129]
+Annotation=4E_093_LeChuck_BlowNose_01
+
+[130]
+Annotation=1D_087_Elaine_Abseil_01
+
+[131]
+Annotation=1S_014_Rat_Squeak_01 (Wave Variation 0)
+
+[132]
+Annotation=1S_014_Rat_Squeak_01 (Wave Variation 1)
+
+[133]
+Annotation=1S_014_Rat_Squeak_01 (Wave Variation 2)
+
+[134]
+Annotation=1S_014_Rat_Squeak_01 (Wave Variation 3)
+
+[135]
+Annotation=1S_016_Guybrush_Dig_01 (Wave Variation 0)
+
+[136]
+Annotation=1S_016_Guybrush_Dig_01 (Wave Variation 1)
+
+[137]
+Annotation=1S_016_Guybrush_Dig_01 (Wave Variation 2)
+
+[138]
+Annotation=1S_016_Guybrush_Dig_01 (Wave Variation 3)
+
+[139]
+Annotation=1S_021_VoodooLady_DollAppear_01
+
+[140]
+Annotation=2B_047_Cannon_Fire_01
+
+[145]
+Annotation=2B_060_Guybrush_RootBeerShake_01
+
+[146]
+Annotation=2B_060_Guybrush_RootBeerSpray_01
+
+[147]
+Annotation=2O_081_Guybrush_Splash_01
+
+[148]
+Annotation=2P_029_PrisonDoor_Close_01
+
+[149]
+Annotation=2P_029_PrisonDoor_Open_01
+
+[150]
+Annotation=2P_034_Guybrush_Knock_01 (Wave Variation 0)
+
+[151]
+Annotation=2P_034_Guybrush_Knock_01 (Wave Variation 1)
+
+[152]
+Annotation=2P_034_Guybrush_Knock_01 (Wave Variation 2)
+
+[153]
+Annotation=2P_034_Guybrush_Knock_01 (Wave Variation 3)
+
+[154]
+Annotation=2P_039_Guybrush_PourDrinkAway_01
+
+[155]
+Annotation=4S_021_Guybrush_DollAppear_01
+
+[156]
+Annotation=GP_038_Door_Close_01 (Wave Variation 0)
+
+[157]
+Annotation=GP_038_Door_Close_01 (Wave Variation 1)
+
+[158]
+Annotation=GP_038_Door_Close_01 (Wave Variation 2)
+
+[159]
+Annotation=GP_038_Door_Close_01 (Wave Variation 3)
+
+[160]
+Annotation=GP_038_Door_Close_01 (Wave Variation 4)
+
+[161]
+Annotation=GP_038_Door_Open_01 (Wave Variation 0)
+
+[162]
+Annotation=GP_038_Door_Open_01 (Wave Variation 1)
+
+[163]
+Annotation=GP_038_Door_Open_01 (Wave Variation 2)
+
+[164]
+Annotation=GP_038_Door_Open_01 (Wave Variation 3)
+
+[165]
+Annotation=GP_038_Door_Open_01 (Wave Variation 4)
+
+[166]
+Annotation=Debug_Sounds
+
+[167]
+Annotation=Debug_Sounds
+
+[168]
+Annotation=Debug_Sounds
+
+[169]
+Annotation=Debug_Sounds
+
+[170]
+Annotation=Debug_Sounds
+
+[171]
+Annotation=Debug_Sounds
+
+[172]
+Annotation=1D_087_Guybrush_RopeCreak_01 (Wave Variation 0)
+
+[173]
+Annotation=1S_007_Guybrush_KitchenWindowExit_01
+
+[174]
+Annotation=1S_007_Largo_ShakeGuybrush_01 (Wave Variation 0) 2P_033_Gambler_TakeMoney_01 (Wave Variation 0)
+
+[175]
+Annotation=1S_008_Wally_PickUpMonacle_01
+
+[176]
+Annotation=1S_008_Wally_PutDownMonacle_01
+
+[177]
+Annotation=1S_009_Bartender_CleanGlass_01 (Wave Variation 0)
+
+[178]
+Annotation=1S_011_Chef_PrepareFood_01 (Wave Variation 0)
+
+[179]
+Annotation=1S_011_Guybrush_KitchenWindowFall_01
+
+[180]
+Annotation=1S_011_Guybrush_KitchenWindowLand_01
+
+[181]
+Annotation=1S_012_Guybrush_BellDing_01
+
+[182]
+Annotation=1S_012_Guybrush_CutRope_01
+
+[183]
+Annotation=1S_012_Lizard_RunAway_01
+
+[184]
+Annotation=1S_013_Guybrush_DollStab_01 (Wave Variation 0)
+
+[185]
+Annotation=1S_013_Largo_BucketHead_01
+
+[186]
+Annotation=1S_013_Largo_Hey_01 (Wave Variation 2)
+
+[186]
+Annotation=1S_013_Largo_Wah_01 (Wave Variation 2)
+
+[186]
+Annotation=1S_013_Largo_Woah_01 (Wave Variation 2)
+
+[187]
+Annotation=1S_013_Largo_Hey_01(Wah and Woah) (Wave Variation 1)
+
+[188]
+Annotation=1S_013_Largo_Hey_01(Wah and Woah) (Wave Variation 0)
+
+[189]
+Annotation=1S_014_Marty_LaundryLine_01
+
+[190]
+Annotation=1S_014_PegLeg_Polish_01
+
+[191]
+Annotation=1S_014_PegLeg_Saw_01 (Wave Variation 0)
+
+[192]
+Annotation=1S_016_Bats_Squeak_01
+
+[193]
+Annotation=1S_020_Guybrush_BucketSwamp_01
+
+[194]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 0)
+
+[195]
+Annotation=1S_020_MojoMouth_Close_01
+
+[196]
+Annotation=1S_020_MojoMouth_Open_01
+
+[197]
+Annotation=1S_021_VoodooLady_IngredientsMix_01 (Wave Variation 0)
+
+[198]
+Annotation=2B_047_Crowd_Clap_01 (Wave Variation 0)
+
+[199]
+Annotation=2B_047_Guybrush_SwishSpit_01 (Wave Variation 0)
+
+[200]
+Annotation=2B_047_Wind_BlowSpit_01 (Wave Variation 0)
+
+[201]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 0)
+
+[202]
+Annotation=2B_051_TollLady_GateOpen_01
+
+[203]
+Annotation=2B_051_TollLady_MaskOff_01
+
+[204]
+Annotation=2B_053_Dog_PickUp_01
+
+[205]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 0)
+
+[206]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 0)
+
+[207]
+Annotation=2B_053_Gardener_RakeThrow_01
+
+[208]
+Annotation=2B_053_Guybrush_GarbageCrash_01
+
+[209]
+Annotation=2B_053_Wind_BlowMapLong_01
+
+[210]
+Annotation=2B_053_Wind_BlowMapShort_01 (Wave Variation 0)
+
+[211]
+Annotation=2B_058_Guybrush_FishingPoleMap_01
+
+[212]
+Annotation=2B_060_Guybrush_OarBreak_01
+
+[213]
+Annotation=2B_060_Guybrush_OarTreeHole_01
+
+[214]
+Annotation=2B_060_Guybrush_Transform_01
+
+[215]
+Annotation=2B_060_Guybrush_TreeStep_01 (Wave Variation 0)
+
+[216]
+Annotation=2B_060_Parents_Transform_01
+
+[217]
+Annotation=2B_062_Dog_MapPile_01
+
+[218]
+Annotation=2P_029_Dog_Pant_01 (Wave Variation 0)
+
+[219]
+Annotation=2P_029_Guybrush_BoneFlip_01
+
+[220]
+Annotation=2P_029_Guybrush_ThrowStick_01
+
+[221]
+Annotation=2P_030_Librarian_ChairRaise_01
+
+[222]
+Annotation=2P_030_Librarian_ChairWheel_01
+
+[223]
+Annotation=2P_030_Librarian_Scribbling_01 (Wave Variation 0)
+
+[224]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 0)
+
+[225]
+Annotation=2P_036_Monkey_FixPump_01
+
+[226]
+Annotation=2P_038_Telescope_StatueUp_01
+
+[227]
+Annotation=2P_039_Guybrush_GrogReact_01
+
+[228]
+Annotation=2P_039_Guybrush_PushBrick_01
+
+[229]
+Annotation=2P_039_RumRogers_DrinkGrog_01 1S_009_Largo_DrinkGrog_01
+
+[230]
+Annotation=2P_039_RumRogers_FootTap_01 (Wave Variation 0)
+
+[232]
+Annotation=2P_039_RumRogers_PassOut_01
+
+[233]
+Annotation=2P_040_Guybrush_SlideLand_01
+
+[234]
+Annotation=2P_044_Phatt_Burp_01
+
+[235]
+Annotation=2P_044_Phatt_FoodAlarm_01
+
+[236]
+Annotation=2P_044_Phatt_FoodDispense_01
+
+[237]
+Annotation=2S_006_Cooker_GasLight_01
+
+[238]
+Annotation=2S_009_Bartender_RatSqueak_01 (Wave Variation 0)
+
+[239]
+Annotation=2S_009_Bartender_SoupServe_01
+
+[240]
+Annotation=2S_009_Guybrush_DrinkNearGrog_01
+
+[241]
+Annotation=2S_015_Woodcutter_Work_01 (Wave Variation 0)
+
+[242]
+Annotation=2S_015_Woodcutter_Work_01 (Wave Variation 3)
+
+[243]
+Annotation=2S_016_RappScallion_Ash2Life_01
+
+[244]
+Annotation=2S_016_RappScallion_BackToAsh_01
+
+[245]
+Annotation=2S_016_RappScallion_DeliverMap_01
+
+[246]
+Annotation=2S_016_RappScallion_Goodbye_01
+
+[247]
+Annotation=2S_020_Guybrush_GetInCrate_01
+
+[248]
+Annotation=3E_093_Match_MatchFly_01
+
+[249]
+Annotation=3F_069_Explosion_Fortress_01
+
+[250]
+Annotation=3F_070_Guybrush_GetOutCrate_01
+
+[251]
+Annotation=3F_074_Guybrush_TrapFall_01
+
+[252]
+Annotation=3F_077_Guybrush_LightMatch_01
+
+[253]
+Annotation=3F_079_Guybrush_DrinkNearGrog_01
+
+[254]
+Annotation=3O_083_Guybrush_Fly_01
+
+[255]
+Annotation=4D_085_Guybrush_BeachLand_01
+
+[256]
+Annotation=4D_085_Guybrush_UseStill_01
+
+[257]
+Annotation=4D_085_Parrot_PickUpCracker_01
+
+[258]
+Annotation=4D_087_Guybrush_HookRod_01
+
+[259]
+Annotation=4D_087_Guybrush_RopeSnap_01
+
+[260]
+Annotation=4D_097_Guybrush_BagBreak_01
+
+[261]
+Annotation=4D_097_Guybrush_BottleBreak_01
+
+[262]
+Annotation=4E_088_Elevator_Move_01 (Wave Variation 0)
+
+[263]
+Annotation=4E_091_Guybrush_BaloonHelium_01
+
+[264]
+Annotation=4E_091_Guybrush_CoinReturn_01
+
+[265]
+Annotation=4E_091_Guybrush_InhaleHelium_01
+
+[266]
+Annotation=4E_091_LeChuck_GrabUnderwear_01
+
+[267]
+Annotation=4E_093_Dog_StealArm_01
+
+[268]
+Annotation=4E_093_Guybrush_Appear_01 (Wave Variation 0)
+
+[269]
+Annotation=4E_093_Guybrush_Disappear_01 (Wave Variation 0)
+
+[270]
+Annotation=4E_093_Guybrush_DollStab_01 (Wave Variation 0)
+
+[271]
+Annotation=4E_093_Guybrush_DollTear_01
+
+[272]
+Annotation=4E_093_LeChuck_ProduceDoll_01
+
+[273]
+Annotation=4E_093_LeChuck_RemoveMask_01
+
+[274]
+Annotation=4E_093_LeChuck_StabDoll_01
+
+[275]
+Annotation=4E_110_Chuckie_EvilLook_01
+
+[276]
+Annotation=4S_021_Guybrush_IngredientsMix_01
+
+[277]
+Annotation=Debug_loop_sustain_01
+
+[278]
+Annotation=1D_087_Guybrush_RopeCreak_01 (Wave Variation 1)
+
+[279]
+Annotation=1D_087_Guybrush_RopeCreak_01 (Wave Variation 2)
+
+[280]
+Annotation=1D_087_Guybrush_RopeCreak_01 (Wave Variation 3)
+
+[281]
+Annotation=1D_087_Guybrush_RopeCreak_01 (Wave Variation 4)
+
+[282]
+Annotation=1S_007_Largo_PickUpGuybrush_01
+
+[283]
+Annotation=1S_007_Largo_PutDownGuybrush_01
+
+[284]
+Annotation=1S_007_Largo_ShakeGuybrush_01 (Wave Variation 1)
+
+[284]
+Annotation=2P_033_Gambler_TakeMoney_01 (Wave Variation 1)
+
+[285]
+Annotation=1S_007_Largo_ShakeGuybrush_01 (Wave Variation 2)
+
+[285]
+Annotation=2P_033_Gambler_TakeMoney_01 (Wave Variation 2)
+
+[286]
+Annotation=1S_007_Largo_ShakeGuybrush_01 (Wave Variation 3)
+
+[286]
+Annotation=2P_033_Gambler_TakeMoney_01 (Wave Variation 3)
+
+[287]
+Annotation=1S_009_Bartender_CleanGlass_01 (Wave Variation 1)
+
+[288]
+Annotation=1S_009_Bartender_CleanGlass_01 (Wave Variation 2)
+
+[289]
+Annotation=1S_009_Bartender_CleanGlass_01 (Wave Variation 3)
+
+[290]
+Annotation=1S_009_Bartender_CleanGlass_01 (Wave Variation 4)
+
+[291]
+Annotation=1S_009_Bartender_CleanGlass_01 (Wave Variation 5)
+
+[292]
+Annotation=1S_009_Bartender_CleanGlass_01 (Wave Variation 6)
+
+[293]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 1)
+
+[294]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 2)
+
+[295]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 3)
+
+[296]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 4)
+
+[297]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 5)
+
+[298]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 6)
+
+[299]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 7)
+
+[300]
+Annotation=1S_020_Guybrush_CoffinRow_01 (Wave Variation 8)
+
+[301]
+Annotation=2B_047_Crowd_Clap2_01
+
+[302]
+Annotation=2B_047_Crowd_Clap3_01
+
+[303]
+Annotation=2B_047_Crowd_Clap_01 (Wave Variation 1)
+
+[304]
+Annotation=2B_047_Wind_BlowSpit_01 (Wave Variation 1)
+
+[305]
+Annotation=2B_047_Wind_BlowSpit_01 (Wave Variation 2)
+
+[306]
+Annotation=2B_047_Wind_BlowSpit_01 (Wave Variation 3)
+
+[307]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 1)
+
+[308]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 2)
+
+[309]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 3)
+
+[310]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 4)
+
+[311]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 5)
+
+[312]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 6)
+
+[313]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 7)
+
+[314]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 8)
+
+[315]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 9)
+
+[316]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 10)
+
+[317]
+Annotation=2B_053_Dog_Sleep_01 (Wave Variation 11)
+
+[318]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 1)
+
+[319]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 2)
+
+[320]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 3)
+
+[321]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 4)
+
+[322]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 5)
+
+[323]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 6)
+
+[324]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 7)
+
+[325]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 8)
+
+[326]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 9)
+
+[327]
+Annotation=2B_053_Gardener_Rake_01 (Wave Variation 10)
+
+[328]
+Annotation=2B_062_Dog_GetMap_01
+
+[329]
+Annotation=2B_062_Dog_RunHome_01
+
+[330]
+Annotation=2P_029_Dog_Pant_01 (Wave Variation 1)
+
+[331]
+Annotation=2P_029_Dog_Pant_01 (Wave Variation 2)
+
+[332]
+Annotation=2P_029_Dog_Pant_01 (Wave Variation 3)
+
+[333]
+Annotation=2P_029_Dog_Pant_01 (Wave Variation 4)
+
+[334]
+Annotation=2P_030_Librarian_Scribbling_01 (Wave Variation 1)
+
+[335]
+Annotation=2S_020_Guybrush_OpenCrate_01
+
+[336]
+Annotation=4D_085_Parrot_EatCracker_01
+
+[337]
+Annotation=4E_088_Elevator_Move_01 (Wave Variation 1)
+
+[338]
+Annotation=4E_090_Guybrush_OpenBox_01
+
+[339]
+Annotation=4E_093_Guybrush_LightSwitch_01
+
+[340]
+Annotation=4E_093_LeChuck_DollElectrocute_01
+
+[341]
+Annotation=4E_093_LeChuck_Lightning_01 (Wave Variation 0)
+
+[342]
+Annotation=4E_093_LeChuck_Lightning_01 (Wave Variation 1)
+
+[343]
+Annotation=1S_011_Chef_ChopLeft_01 (Wave Variation 0)
+
+[344]
+Annotation=1S_011_Chef_ChopLeft_01 (Wave Variation 1)
+
+[345]
+Annotation=1S_011_Chef_ChopLeft_01 (Wave Variation 2)
+
+[346]
+Annotation=1S_011_Chef_ChopLeft_01 (Wave Variation 3)
+
+[347]
+Annotation=1S_011_Chef_ChopLeft_01 (Wave Variation 4)
+
+[348]
+Annotation=1S_011_Chef_KillChicken_01 (Wave Variation 0)
+
+[349]
+Annotation=1S_011_Chef_KillChicken_01 (Wave Variation 1)
+
+[350]
+Annotation=1S_011_Chef_KillChicken_01 (Wave Variation 2)
+
+[351]
+Annotation=1S_011_Chef_KillChicken_01 (Wave Variation 3)
+
+[352]
+Annotation=1S_011_Chef_Potato_01 (Wave Variation 0)
+
+[353]
+Annotation=1S_011_Chef_PrepareFood_01 (Wave Variation 4)
+
+[354]
+Annotation=1S_011_Chef_PrepareFood_01 (Wave Variation 2)
+
+[355]
+Annotation=1S_011_Chef_PrepareFood_01 (Wave Variation 3)
+
+[356]
+Annotation=1S_011_Chef_PrepareFood_01 (Wave Variation 1)
+
+[357]
+Annotation=1S_013_Guybrush_DollStab_01 (Wave Variation 1)
+
+[358]
+Annotation=1S_013_Guybrush_DollStab_01 (Wave Variation 2)
+
+[360]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 2)
+
+[361]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 3)
+
+[362]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 4)
+
+[363]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 5)
+
+[364]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 6)
+
+[365]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 7)
+
+[366]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 8)
+
+[367]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 9)
+
+[368]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 10)
+
+[369]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 11)
+
+[370]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 12)
+
+[371]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 13)
+
+[372]
+Annotation=2B_050_Guybrush_HammerNails_01 (Wave Variation 1)
+
+[373]
+Annotation=2B_053_Wind_BlowMapShort_01 (Wave Variation 1)
+
+[374]
+Annotation=2B_060_Guybrush_TreeStep_01 (Wave Variation 1)
+
+[375]
+Annotation=2B_060_Guybrush_TreeStep_01 (Wave Variation 2)
+
+[376]
+Annotation=2P_039_Guybrush_TrapDoorFall_01
+
+[377]
+Annotation=2P_039_RumRogers_FootTap_01 (Wave Variation 2)
+
+[378]
+Annotation=2P_039_RumRogers_FootTap_01 (Wave Variation 3)
+
+[379]
+Annotation=2P_039_RumRogers_FootTap_01 (Wave Variation 4)
+
+[380]
+Annotation=2P_039_RumRogers_FootTap_01 (Wave Variation 5)
+
+[381]
+Annotation=2P_039_RumRogers_FootTap_01 (Wave Variation 6)
+
+[382]
+Annotation=2P_039_RumRogers_FootTap_01 (Wave Variation 1)
+
+[383]
+Annotation=2P_040_Guybrush_SlideOut_01
+
+[384]
+Annotation=2P_044_Guybrush_BookSwap_01
+
+[385]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 0)
+
+[386]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 1)
+
+[387]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 2)
+
+[388]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 3)
+
+[389]
+Annotation=3F_079_Guybrush_DrinkGreenDrink_01
+
+[390]
+Annotation=4D_097_Guybrush_BagHit_01
+
+[391]
+Annotation=4E_093_Guybrush_DollStab_01 (Wave Variation 1)
+
+[392]
+Annotation=4E_093_Guybrush_DollStab_01 (Wave Variation 2)
+
+[393]
+Annotation=2S_009_Bartender_RatSqueak_01 (Wave Variation 1)
+
+[394]
+Annotation=2S_009_Bartender_RatSqueak_01 (Wave Variation 2)
+
+[395]
+Annotation=2S_009_Bartender_RatSqueak_01 (Wave Variation 3)
+
+[396]
+Annotation=1S_011_Guybrush_KitchenWindowEnter_01
+
+[397]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 6)
+
+[398]
+Annotation=2B_047_Guybrush_HockSpit_01 (Wave Variation 7)
+
+[399]
+Annotation=2B_047_Guybrush_SwishSpit_01 (Wave Variation 1)
+
+[400]
+Annotation=2B_047_Guybrush_SwishSpit_01 (Wave Variation 2)
+
+[401]
+Annotation=2B_047_Guybrush_SwishSpit_01 (Wave Variation 3)
+
+[402]
+Annotation=2B_051_Guybrush_ScreamWigOut_01
+
+[403]
+Annotation=3F_079_Guybrush_Death_01
+
+[404]
+Annotation=4E_091_Guybrush_Bluergh_01
+
+[405]
+Annotation=4E_093_Guybrush_Appear_01 (Wave Variation 1)
+
+[406]
+Annotation=4E_093_Guybrush_Appear_01 (Wave Variation 2)
+
+[407]
+Annotation=4E_093_Guybrush_Appear_01 (Wave Variation 3)
+
+[408]
+Annotation=4E_093_Guybrush_Appear_01 (Wave Variation 4)
+
+[409]
+Annotation=4E_093_Guybrush_BendBackwards_01
+
+[410]
+Annotation=4E_093_Guybrush_NeckTwist_01
+
+[411]
+Annotation=4E_093_Guybrush_TotureScream_01 (Wave Variation 0)
+
+[412]
+Annotation=4E_093_Guybrush_TotureScream_01 (Wave Variation 1)
+
+[413]
+Annotation=4E_093_Guybrush_TotureScream_01 (Wave Variation 2)
+
+[414]
+Annotation=4E_093_Guybrush_TotureScream_01 (Wave Variation 3)
+
+[415]
+Annotation=4E_093_LeChuck_StabGlow_01
+
+[416]
+Annotation=1S_016_Guybrush_ShovelIn_01
+
+[417]
+Annotation=1S_016_Guybrush_ShovelOut_01
+
+[418]
+Annotation=2P_037_Guybrush_SlideBounceOut_01
+
+[419]
+Annotation=1S_014_Men_SpotMissingPegLeg_01
+
+[420]
+Annotation=2S_016_Coffin_Open_01
+
+[421]
+Annotation=1S_014_PegLeg_Saw_01 (Wave Variation 3)
+
+[422]
+Annotation=1S_014_PegLeg_Saw_01 (Wave Variation 2)
+
+[423]
+Annotation=1S_014_PegLeg_Saw_01 (Wave Variation 1)
+
+[424]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 4)
+
+[425]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 5)
+
+[426]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 6)
+
+[427]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 7)
+
+[428]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 8)
+
+[429]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 9)
+
+[430]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 10)
+
+[431]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 11)
+
+[432]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 12)
+
+[433]
+Annotation=2S_015_Woodcutter_Work2_01 (Wave Variation 13)
+
+[434]
+Annotation=2S_015_Woodcutter_Work_01 (Wave Variation 1)
+
+[435]
+Annotation=2S_015_Woodcutter_Work_01 (Wave Variation 2)
+
+[436]
+Annotation=1S_009_Bartender_Spit_01 (Wave Variation 0)
+
+[437]
+Annotation=1S_009_Bartender_Spit_01 (Wave Variation 1)
+
+[438]
+Annotation=1S_009_Bartender_Spit_01 (Wave Variation 2)
+
+[439]
+Annotation=1S_009_Bartender_Spit_01 (Wave Variation 3)
+
+[440]
+Annotation=1S_009_Bartender_Spit_01 (Wave Variation 4)
+
+[442]
+Annotation=4E_093_LeChuck_StabCharge_01
+
+[443]
+Annotation=2P_039_Guybrush_GrogCollapse_01
+
+[444]
+Annotation=2P_039_Guybrush_GrogShake_01 (Wave Variation 1)
+
+[445]
+Annotation=2P_039_Guybrush_GrogShake_01 (Wave Variation 0)
+
+[446]
+Annotation=2P_039_Guybrush_GrogCough_01 (Wave Variation 1)
+
+[447]
+Annotation=2P_039_Guybrush_GrogCough_01 (Wave Variation 0)
+
+[448]
+Annotation=1S_020_Guybrush_GetinCoffin_01
+
+[449]
+Annotation=1S_020_Guybrush_GetOutCoffin_01
+
+[450]
+Annotation=UIBack
+
+[450]
+Annotation=UI_Back_01
+
+[450]
+Annotation=UI_Fail_01
+
+[451]
+Annotation=UI_InventoryClose_01
+
+[452]
+Annotation=UI_InventoryMove_01 (Wave Variation 0)
+
+[453]
+Annotation=UI_InventoryMove_01 (Wave Variation 1)
+
+[454]
+Annotation=UI_InventoryMove_01 (Wave Variation 2)
+
+[455]
+Annotation=UI_InventoryMove_01 (Wave Variation 3)
+
+[456]
+Annotation=UI_InventoryMove_01 (Wave Variation 4)
+
+[457]
+Annotation=UI_InventoryOpen_01
+
+[458]
+Annotation=UI_InventorySelect_01
+
+[459]
+Annotation=UIChange (Wave Variation 0)
+
+[460]
+Annotation=UIChange (Wave Variation 1)
+
+[461]
+Annotation=UIChange (Wave Variation 2)
+
+[462]
+Annotation=UIChange (Wave Variation 3)
+
+[463]
+Annotation=UIChange (Wave Variation 4)
+
+[464]
+Annotation=UI_Pickup_01 UI_UseObjectWithObject_01 (Wave Variation 0)
+
+[465]
+Annotation=UI_Pickup_01 UI_UseObjectWithObject_01 (Wave Variation 1)
+
+[466]
+Annotation=UI_Pickup_01 UI_UseObjectWithObject_01 (Wave Variation 2)
+
+[467]
+Annotation=UI_Pickup_01 UI_UseObjectWithObject_01 (Wave Variation 3)
+
+[468]
+Annotation=UI_Pickup_01 UI_UseObjectWithObject_01 (Wave Variation 4)
+
+[469]
+Annotation=UI_Pickup_01 UI_UseObjectWithObject_01 (Wave Variation 5)
+
+[470]
+Annotation=UI_Pickup_01 UI_UseObjectWithObject_01 (Wave Variation 6)
+
+[471]
+Annotation=UI_PickupSpecial_01
+
+[472]
+Annotation=UI_Scroll_01
+
+[473]
+Annotation=UISelect
+
+[473]
+Annotation=UI_Select_01
+
+[474]
+Annotation=4E_093_Guybrush_Disappear_01 (Wave Variation 1)
+
+[475]
+Annotation=3F_079_Trap_Spring_01
+
+[476]
+Annotation=1S_021_VoodooLady_IngredientAdd_01 (Wave Variation 2)
+
+[477]
+Annotation=1S_021_VoodooLady_IngredientAdd_01 (Wave Variation 0)
+
+[478]
+Annotation=1S_021_VoodooLady_IngredientAdd_01 (Wave Variation 1)
+
+[479]
+Annotation=2P_044_Phatt_Snore_01
+
+[480]
+Annotation=1S_007_Guybrush_KitchenWindowExitNormal_01
+
+[481]
+Annotation=1S_011_Chef_Potato_01 (Wave Variation 1)
+
+[482]
+Annotation=UI_ActionWheelCancel_01
+
+[483]
+Annotation=UI_ActionWheelMove_01
+
+[484]
+Annotation=UI_ActionWheelOpen_01
+
+[485]
+Annotation=UI_ActionWheelSelect_01
+
+[486]
+Annotation=UIFail
+
+[487]
+Annotation=4E_088_Elevator_Doors_01
+
+[488]
+Annotation=1S_013_Largo_Hey_01(Wah and Woah) (Wave Variation 3)
+
+[489]
+Annotation=1S_013_Largo_Hey_01(Wah and Woah) (Wave Variation 7)
+
+[490]
+Annotation=1S_013_Largo_Hey_01(Wah and Woah) (Wave Variation 6)
+
+[491]
+Annotation=1S_013_Largo_Hey_01(Wah and Woah) (Wave Variation 5)
+
+[492]
+Annotation=1S_013_Largo_Hey_01(Wah and Woah) (Wave Variation 4)
+
+[493]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 9)
+
+[494]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 8)
+
+[495]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 7)
+
+[496]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 6)
+
+[497]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 5)
+
+[498]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 4)
+
+[499]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 3)
+
+[500]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 2)
+
+[501]
+Annotation=2P_033_Croupier_SpinWheel_01 (Wave Variation 1)
+
+[502]
+Annotation=SFX_Goldguy
+
+[503]
+Annotation=1S_021_VoodooLady_IngredientsMix_01 (Wave Variation 1)
+
+[504]
+Annotation=1S_021_VoodooLady_IngredientsMix_01 (Wave Variation 2)
+
+[505]
+Annotation=1S_021_VoodooLady_IngredientsMix_01 (Wave Variation 3)
+
+[506]
+Annotation=1S_021_VoodooLady_IngredientsMix_01 (Wave Variation 4)
+
+[507]
+Annotation=1S_021_VoodooLady_IngredientsMix_01 (Wave Variation 5)
+
+[508]
+Annotation=1S_021_VoodooLady_IngredientsMix_01 (Wave Variation 6)
+
+[509]
+Annotation=2P_027_Guard_GunHolster_01
+
+[510]
+Annotation=2P_027_Guard_GunDraw_01
+
+[511]
+Annotation=SFX_93_underground_1_1
+

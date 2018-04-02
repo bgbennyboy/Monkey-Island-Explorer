@@ -1,11 +1,19 @@
+{
+******************************************************
+  Monkey Island Explorer
+  Copyright (c) 2010 - 2018 Bennyboy
+  Http://quickandeasysoftware.net
+******************************************************
+}
+
 unit uMIExplorer_Const;
 
 interface
 
 const
   strAppName:     string = 'Monkey Island Explorer';
-  strAppVersion:  string = '0.5.0';
-  strAppURL:      string = 'http://quick.mixnmojo.com';
+  strAppVersion:  string = '0.6.0';
+  strAppURL:      string = 'http://quickandeasysoftware.net';
 
 
 {**********************************Main Form***********************************}
