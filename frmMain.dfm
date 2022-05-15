@@ -330,7 +330,6 @@ object formMain: TformMain
       Appearance.GradientMirrorDown = ggVertical
       Appearance.GradientChecked = ggVertical
       Layout = blGlyphTop
-      ExplicitLeft = 330
     end
     object btnFilterView: TAdvGlowButton
       Left = 82
@@ -26698,7 +26697,6 @@ object formMain: TformMain
     Header.DefaultHeight = 17
     Header.Height = 18
     Header.Options = [hoAutoResize, hoColumnResize, hoDblClickResize, hoDrag, hoHotTrack, hoShowImages, hoVisible, hoAutoSpring]
-    Header.ParentFont = True
     Header.SortColumn = 0
     Header.Style = hsPlates
     Images = ImageList1
@@ -26710,30 +26708,32 @@ object formMain: TformMain
     OnDblClick = TreeDblClick
     OnGetText = TreeGetText
     OnGetImageIndex = TreeGetImageIndex
+    Touch.InteractiveGestures = [igPan, igPressAndTap]
+    Touch.InteractiveGestureOptions = [igoPanSingleFingerHorizontal, igoPanSingleFingerVertical, igoPanInertia, igoPanGutter, igoParentPassthrough]
     Columns = <
       item
         MaxWidth = 1000
         MinWidth = 80
         Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring]
         Position = 0
+        Text = 'Files'
         Width = 296
-        WideText = 'Files'
       end
       item
         MaxWidth = 100
         MinWidth = 80
         Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring]
         Position = 1
+        Text = 'Size'
         Width = 100
-        WideText = 'Size'
       end
       item
         MaxWidth = 100
         MinWidth = 80
         Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring]
         Position = 2
+        Text = 'Offset'
         Width = 100
-        WideText = 'Offset'
       end>
   end
   object panelBottom: TPanel
@@ -26898,14 +26898,16 @@ object formMain: TformMain
   object PopupFileTypes: TAdvPopupMenu
     Images = ImageList1
     MenuStyler = AdvMenuOfficeStyler1
-    Version = '2.6.1.1'
+    Version = '2.7.1.5'
+    UIStyle = tsCustom
     Left = 368
     Top = 208
   end
   object popupOpen: TAdvPopupMenu
     Images = ImageList1
     MenuStyler = AdvMenuOfficeStyler1
-    Version = '2.6.1.1'
+    Version = '2.7.1.5'
+    UIStyle = tsCustom
     Left = 368
     Top = 144
     object MenuItemOpenFolder: TMenuItem
@@ -26930,7 +26932,8 @@ object formMain: TformMain
   object popupSave: TAdvPopupMenu
     Images = ImageList1
     MenuStyler = AdvMenuOfficeStyler1
-    Version = '2.6.1.1'
+    Version = '2.7.1.5'
+    UIStyle = tsCustom
     Left = 296
     Top = 144
     object menuItemDumpFile: TMenuItem
@@ -26962,7 +26965,8 @@ object formMain: TformMain
   object popupSaveAll: TAdvPopupMenu
     Images = ImageList1
     MenuStyler = AdvMenuOfficeStyler1
-    Version = '2.6.1.1'
+    Version = '2.7.1.5'
+    UIStyle = tsCustom
     Left = 296
     Top = 208
     object menuItemSaveAllRaw: TMenuItem

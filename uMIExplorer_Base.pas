@@ -37,6 +37,8 @@ public
   destructor Destroy; override;
   function DrawImageGeneric(FileIndex: integer; DestBitmap: TBitmap32): boolean;
   function DrawImageDDS(FileIndex: integer; DestBitmap: TBitmap32): boolean;
+  function SaveImageGenericAsPNG(FileIndex: integer; DestDir, FileName: string): Boolean; //Stop the save image being impossibly slow with the drawing to multiple bitmaps
+  function SaveImageDDSAsPNG(FileIndex: integer; DestDir, FileName: string): Boolean;
   function SaveDDSToFile(FileIndex: integer; DestDir, FileName: string): boolean;
   procedure Initialise;
   procedure SaveFile(FileNo: integer; DestDir, FileName: string);
@@ -117,8 +119,8 @@ begin
       WriteDDSToStream(Tempstream, DDSStream);
 
       DestBitmap.Clear();
-      destbitmap.CombineMode:=cmBlend;
-      destBitmap.DrawMode:=dmOpaque;
+      destbitmap.CombineMode:=cmMerge ;
+      destBitmap.DrawMode:=dmBlend ;
       if DrawImage(DDSStream, DestBitmap)=false then
       begin
         Log('DDS Decode failed! ' + fBundle.FileName[FileIndex]);
@@ -373,6 +375,84 @@ begin
 end;
 
 
+
+function TMIExplorerBase.SaveImageDDSAsPNG(FileIndex: integer; DestDir,
+  FileName: string): Boolean;
+var
+  TempStream, DDSStream: TExplorerMemoryStream;
+  ImgPNG: TImagingPNG;
+begin
+  Result:=false;
+
+  TempStream:=TExplorerMemoryStream.Create;
+  try
+    fBundle.SaveFileToStream(FileIndex, TempStream);
+    TempStream.Position:=0;
+
+    DDSStream:=TExplorerMemoryStream.Create;
+    try
+      WriteDDSToStream(Tempstream, DDSStream);
+      DDSStream.Position :=0;
+
+      ImgPNG := TImagingPNG.Create;
+      try
+        ImgPNG.LoadFromStream(DDSStream);
+        if ImgPNG.Empty then
+        begin
+          Result := false;
+          Log('Image decode failed! ' + fBundle.FileName[FileIndex]);
+          Exit;
+        end;
+
+        ImgPNG.SaveToFile( IncludeTrailingPathDelimiter(DestDir)  + FileName );
+        Result := true;
+      finally
+        ImgPNG.Free;
+      end;
+
+      Result:=true;
+    finally
+      DDSStream.Free;
+    end;
+  finally
+    TempStream.Free;
+  end;
+
+end;
+
+function TMIExplorerBase.SaveImageGenericAsPNG(FileIndex: integer; DestDir,
+  FileName: string): Boolean;
+var
+  TempStream: TExplorerMemoryStream;
+  ImgPNG: TImagingPNG;
+begin
+  result:=true;
+
+  TempStream:=TExplorerMemoryStream.Create;
+  try
+    fBundle.SaveFileToStream(FileIndex, TempStream);
+
+    TempStream.Position:=0;
+    ImgPNG := TImagingPNG.Create;
+    try
+      ImgPNG.LoadFromStream(TempStream);
+      if ImgPNG.Empty then
+      begin
+        Result := false;
+        Log('Image decode failed! ' + fBundle.FileName[FileIndex]);
+        Exit;
+      end;
+
+      ImgPNG.SaveToFile( IncludeTrailingPathDelimiter(DestDir)  + FileName );
+      Result := true;
+    finally
+      ImgPNG.Free;
+    end;
+  finally
+    TempStream.Free;
+  end;
+
+end;
 
 function TMIExplorerBase.SaveWavToFile(FileIndex: integer; DestDir,
   FileName: string): boolean;

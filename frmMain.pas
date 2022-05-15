@@ -549,7 +549,7 @@ var
   Ext: string;
 begin
   if column <> 0 then exit;
-  if Kind = ikOverlay then exit;
+  if (Kind = ikOverlay) or (Kind = ikState) then exit;
 
   Ext:=Uppercase(extractfileext(fExplorer.FileName[node.index]));
   if StrIndex(Ext, arrImageTypes) > -1 then
@@ -814,8 +814,6 @@ end;
 
 procedure TformMain.menuItemDumpImageClick(Sender: TObject);
 var
-  TempPng: TPngImage;
-  TempBmp: TBitmap;
   TempBmp32: TBitmap32;
   Ext: string;
   DecodeResult: boolean;
@@ -831,7 +829,6 @@ begin
   DecodeResult:=false;
   ext:=Uppercase(extractfileext(fExplorer.FileName[Tree.focusednode.Index]));
 
-  TempPng:=TPngImage.Create;
   try
     EnableDisableButtonsGlobal(false);
     DoLog(strSavingFile + SaveDialog1.FileName);
@@ -840,10 +837,13 @@ begin
     try
       if StrIndex(Ext, arrDDSImageTypes) > -1 then
       begin
-        DecodeResult:=fExplorer.DrawImageDDS(Tree.focusednode.Index, TempBmp32)
+        DecodeResult:= fExplorer.SaveImageDDSAsPNG(Tree.focusednode.Index, ExtractFilePath(SaveDialog1.FileName), ExtractFileName(SaveDialog1.FileName));
+        //DecodeResult:=fExplorer.DrawImageDDS(Tree.focusednode.Index, TempBmp32);
+        //if DecodeResult = true then
+        //  SaveBitmap32ToPNG(TempBmp32,SaveDialog1.FileName);
       end
       else
-        DecodeResult:=fExplorer.DrawImageGeneric(Tree.focusednode.Index, TempBmp32) ;
+        DecodeResult:= fExplorer.SaveImageGenericAsPNG(Tree.focusednode.Index, ExtractFilePath(SaveDialog1.FileName), ExtractFileName(SaveDialog1.FileName)); //fExplorer.DrawImageGeneric(Tree.focusednode.Index, TempBmp32) ;
 
       if DecodeResult = false then
       begin
@@ -851,19 +851,11 @@ begin
         exit;
       end;
 
-      TempBmp:=TBitmap.Create;
-      try
-        TempBmp.Assign(TempBmp32);
-        TempPng.Assign(TempBmp);
-      finally
-        TempBmp.Free;
-      end;
-      TempPng.SaveToFile(SaveDialog1.FileName);
+
     finally
       TempBmp32.Free;
     end;
   finally
-    TempPng.Free;
     if DecodeResult = true then DoLog(strDone);
     EnableDisableButtonsGlobal(true);
   end;
@@ -1032,8 +1024,6 @@ end;
 
 procedure TformMain.menuItemSaveAllImagesClick(Sender: TObject);
 var
-  TempPng: TPngImage;
-  TempBmp: TBitmap;
   TempBmp32: TBitmap32;
   TempNode: pVirtualNode;
   Ext: string;
@@ -1042,9 +1032,7 @@ begin
   if Tree.RootNodeCount=0 then exit;
   if dlgBrowseforSaveFolder.Execute = false then exit;
 
-  TempPng:=TPngImage.Create;
   TempBmp32:=TBitmap32.Create;
-  TempBmp:=TBitmap.Create;
   try
     EnableDisableButtonsGlobal(false);
     ShowProgress(True);
@@ -1061,14 +1049,18 @@ begin
       end;
 
       TempBmp32.Clear;
-      TempBmp.Assign(nil);
+
+      ForceDirectories(extractfilepath(IncludeTrailingPathDelimiter(dlgBrowseForSaveFolder.Directory) + ExtractPartialPath( fExplorer.FileName[TempNode.Index])));
 
       if StrIndex(Ext, arrDDSImageTypes) > -1 then
       begin
-        DecodeResult:=fExplorer.DrawImageDDS(TempNode.Index, TempBmp32)
+        DecodeResult := fExplorer.SaveImageDDSAsPNG(TempNode.Index, IncludeTrailingPathDelimiter(dlgBrowseForSaveFolder.Directory), ChangeFileExt(fExplorer.FileName[TempNode.Index], '.png'));
+        //DecodeResult:=fExplorer.DrawImageDDS(TempNode.Index, TempBmp32);
+        //if DecodeResult = true then
+        //  SaveBitmap32ToPNG(TempBmp32,IncludeTrailingPathDelimiter(dlgBrowseForSaveFolder.Directory) +  ChangeFileExt(fExplorer.FileName[TempNode.Index], '.png'));
       end
       else
-        DecodeResult:=fExplorer.DrawImageGeneric(TempNode.Index, TempBmp32);
+        DecodeResult:= fExplorer.SaveImageGenericAsPNG(TempNode.Index, IncludeTrailingPathDelimiter(dlgBrowseForSaveFolder.Directory), ChangeFileExt(fExplorer.FileName[TempNode.Index], '.png')); //fExplorer.DrawImageGeneric(TempNode.Index, TempBmp32);
 
       if DecodeResult = false then
       begin
@@ -1076,19 +1068,14 @@ begin
         continue;
       end;
 
-      TempBmp.Assign(TempBmp32);
-      TempPng.Assign(TempBmp);
-      ForceDirectories(extractfilepath(IncludeTrailingPathDelimiter(dlgBrowseForSaveFolder.Directory) + ExtractPartialPath( fExplorer.FileName[TempNode.Index])));
-      TempPng.SaveToFile(IncludeTrailingPathDelimiter(dlgBrowseForSaveFolder.Directory) +  ChangeFileExt(fExplorer.FileName[TempNode.Index], '.png'));
+      //TempPng.SaveToFile(IncludeTrailingPathDelimiter(dlgBrowseForSaveFolder.Directory) +  ChangeFileExt(fExplorer.FileName[TempNode.Index], '.png'));
 
       Application.ProcessMessages;
       TempNode:=Tree.GetNext(TempNode);
     end;
 
   finally
-    TempPng.Free;
     TempBmp32.Free;
-    TempBmp.Free;
     EnableDisableButtonsGlobal(true);
     ShowProgress(False);
     DoLog(strDone);
