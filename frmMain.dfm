@@ -2,8 +2,8 @@ object formMain: TformMain
   Left = 0
   Top = 0
   Caption = 'formMain'
-  ClientHeight = 432
-  ClientWidth = 694
+  ClientHeight = 472
+  ClientWidth = 862
   Color = clBtnFace
   Constraints.MinHeight = 470
   Constraints.MinWidth = 626
@@ -21,13 +21,14 @@ object formMain: TformMain
   object panelButtons: TPanel
     Left = 0
     Top = 0
-    Width = 694
+    Width = 862
     Height = 55
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 694
     DesignSize = (
-      694
+      862
       55)
     object btnAbout: TAdvGlowButton
       Left = 327
@@ -1467,7 +1468,7 @@ object formMain: TformMain
     object editFind: TJvEdit
       Left = 416
       Top = 0
-      Width = 278
+      Width = 446
       Height = 55
       Hint = 'Search for a word in an annotation or file name'
       EmptyValue = 'Search'
@@ -1483,31 +1484,35 @@ object formMain: TformMain
       TabOrder = 5
       Text = ''
       OnChange = editFindChange
+      ExplicitWidth = 278
     end
   end
   object panelPreviewContainer: TPanel
-    Left = 503
+    Left = 600
     Top = 55
-    Width = 191
-    Height = 315
+    Width = 262
+    Height = 355
     Align = alRight
+    Anchors = [akLeft, akTop, akRight, akBottom]
     BevelOuter = bvNone
     Constraints.MinWidth = 190
     TabOrder = 1
     object panelProgress: TPanel
       Left = 0
       Top = 0
-      Width = 191
-      Height = 315
+      Width = 262
+      Height = 355
       Align = alClient
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 4
       Visible = False
+      ExplicitWidth = 191
+      ExplicitHeight = 315
       object Image2: TImage
         Left = 0
         Top = 0
-        Width = 191
+        Width = 262
         Height = 150
         Align = alTop
         Center = True
@@ -4007,11 +4012,12 @@ object formMain: TformMain
           8B251ABC34592CD1E0A5C96289062F4D164B347869B258A2C14B93C5120D5E9A
           2C9668F0D264B1F47FB6C54A97DDFBCF370000000049454E44AE426082}
         Transparent = True
+        ExplicitWidth = 191
       end
       object JvGIFAnimator1: TJvGIFAnimator
         Left = 0
-        Top = 184
-        Width = 191
+        Top = 224
+        Width = 262
         Height = 131
         AsyncDrawing = True
         AutoSize = False
@@ -4510,22 +4516,26 @@ object formMain: TformMain
           FAFA631FFFFC77BEF0CDAF247A2BDE5B085881FCA94F7B0A741FFC00F840F414
           E46E16BCA0DD0C121000003B}
         Align = alBottom
+        ExplicitTop = 184
+        ExplicitWidth = 191
       end
     end
     object PanelPreviewAudio: TPanel
       Left = 0
       Top = 0
-      Width = 191
-      Height = 315
+      Width = 262
+      Height = 355
       Align = alClient
       BevelOuter = bvSpace
       TabOrder = 3
+      ExplicitWidth = 191
+      ExplicitHeight = 315
       DesignSize = (
-        191
-        315)
+        262
+        355)
       object btnPlay: TSpeedButton
         Left = 22
-        Top = 147
+        Top = 168
         Width = 41
         Height = 41
         Anchors = [akLeft]
@@ -4587,7 +4597,7 @@ object formMain: TformMain
       end
       object btnPause: TSpeedButton
         Left = 69
-        Top = 147
+        Top = 168
         Width = 41
         Height = 41
         Anchors = [akLeft]
@@ -4649,7 +4659,7 @@ object formMain: TformMain
       end
       object btnStop: TSpeedButton
         Left = 116
-        Top = 147
+        Top = 168
         Width = 41
         Height = 41
         Anchors = [akLeft]
@@ -4712,7 +4722,7 @@ object formMain: TformMain
       end
       object lblTime: TLabel
         Left = 24
-        Top = 90
+        Top = 103
         Width = 137
         Height = 20
         Alignment = taCenter
@@ -4724,29 +4734,32 @@ object formMain: TformMain
       end
       object TrackBarAudio: TJvTracker
         Left = 6
-        Top = 117
+        Top = 133
         Width = 179
         Height = 24
         ThumbHeight = 20
         OnChangedValue = TrackBarAudioChangedValue
         Anchors = [akLeft]
         TabOrder = 0
+        ExplicitTop = 117
       end
     end
     object panelPreviewImage: TPanel
       Left = 0
       Top = 0
-      Width = 191
-      Height = 315
+      Width = 262
+      Height = 355
       Align = alClient
       BevelOuter = bvNone
       Caption = 'Image'
       TabOrder = 0
+      ExplicitWidth = 191
+      ExplicitHeight = 315
       object imagePreview: TImage32
         Left = 0
         Top = 0
-        Width = 191
-        Height = 315
+        Width = 262
+        Height = 355
         Align = alClient
         Bitmap.ResamplerClassName = 'TNearestResampler'
         BitmapAlign = baTopLeft
@@ -4754,41 +4767,49 @@ object formMain: TformMain
         Scale = 1.000000000000000000
         ScaleMode = smOptimalScaled
         TabOrder = 0
+        ExplicitWidth = 191
+        ExplicitHeight = 315
       end
     end
     object panelPreviewText: TPanel
       Left = 0
       Top = 0
-      Width = 191
-      Height = 315
+      Width = 262
+      Height = 355
       Align = alClient
       BevelOuter = bvNone
       Caption = 'Text'
       TabOrder = 1
+      ExplicitWidth = 191
+      ExplicitHeight = 315
       object memoPreview: TMemo
         Left = 0
         Top = 0
-        Width = 191
-        Height = 315
+        Width = 262
+        Height = 355
         Align = alClient
         ScrollBars = ssVertical
         TabOrder = 0
+        ExplicitWidth = 191
+        ExplicitHeight = 315
       end
     end
     object panelBlank: TPanel
       Left = 0
       Top = 0
-      Width = 191
-      Height = 315
+      Width = 262
+      Height = 355
       Align = alClient
       BevelOuter = bvNone
       Constraints.MinWidth = 190
       TabOrder = 2
+      ExplicitWidth = 191
+      ExplicitHeight = 315
       object Image1: TImage
         Left = 0
         Top = 0
-        Width = 191
-        Height = 315
+        Width = 262
+        Height = 355
         Align = alClient
         Center = True
         Picture.Data = {
@@ -6096,8 +6117,8 @@ object formMain: TformMain
   object Tree: TVirtualStringTree
     Left = 0
     Top = 55
-    Width = 500
-    Height = 315
+    Width = 597
+    Height = 355
     Align = alClient
     Background.Data = {
       07544269746D6170E20D0A00424DE20D0A00000000003600000028000000A101
@@ -26710,6 +26731,8 @@ object formMain: TformMain
     OnGetImageIndex = TreeGetImageIndex
     Touch.InteractiveGestures = [igPan, igPressAndTap]
     Touch.InteractiveGestureOptions = [igoPanSingleFingerHorizontal, igoPanSingleFingerVertical, igoPanInertia, igoPanGutter, igoParentPassthrough]
+    ExplicitWidth = 500
+    ExplicitHeight = 315
     Columns = <
       item
         MaxWidth = 1000
@@ -26717,7 +26740,7 @@ object formMain: TformMain
         Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring]
         Position = 0
         Text = 'Files'
-        Width = 296
+        Width = 433
       end
       item
         MaxWidth = 100
@@ -26725,7 +26748,7 @@ object formMain: TformMain
         Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring]
         Position = 1
         Text = 'Size'
-        Width = 100
+        Width = 80
       end
       item
         MaxWidth = 100
@@ -26733,20 +26756,22 @@ object formMain: TformMain
         Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring]
         Position = 2
         Text = 'Offset'
-        Width = 100
+        Width = 80
       end>
   end
   object panelBottom: TPanel
     Left = 0
-    Top = 370
-    Width = 694
+    Top = 410
+    Width = 862
     Height = 62
     Align = alBottom
     TabOrder = 3
+    ExplicitTop = 370
+    ExplicitWidth = 694
     object memoLog: TJvRichEdit
       Left = 1
       Top = 1
-      Width = 692
+      Width = 860
       Height = 60
       AdvancedTypography = False
       Align = alClient
@@ -26771,16 +26796,19 @@ object formMain: TformMain
       SelText = ''
       TabOrder = 0
       OnURLClick = memoLogURLClick
+      ExplicitWidth = 692
     end
   end
   object JvxSplitter1: TJvxSplitter
-    Left = 500
+    Left = 597
     Top = 55
     Width = 3
-    Height = 315
+    Height = 355
     ControlFirst = panelPreviewContainer
     Align = alRight
     Flat = False
+    ExplicitLeft = 500
+    ExplicitHeight = 315
   end
   object OpenDialog1: TOpenDialog
     Filter = 'Pak And Wavebank Files|*.PAK;*.XWB|All Files|*'
